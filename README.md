@@ -2,7 +2,8 @@
 #### Sean Chien
 This tutorial is to create a circos plot with two genomes (reference / de novo) and add some feathers (ex: read depth) to inner rings \
 Here is the example \
-[[]]
+![circos](https://github.com/user-attachments/assets/e139c01a-ea10-4cb9-a0aa-691e86dc899b)
+
 ## Karyotype data
 The format for this data is \
 chr - ID LABEL START END COLOR
