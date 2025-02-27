@@ -53,10 +53,24 @@ minimap2 genome1.fa.final_sort_hard genome2.fa.final_sort > genome1_genome2_mini
 ```bash
 awk '{print $6,$8,$9,$1,$3,$4}' genome1_genome2_minimap2.paf > genome1_genome2.tsv
 ```
+###### generating colors for links 
+I create a file that first column is contig name and second column is coresponse color 
+
+```bash
+awk 'NR==FNR{colors[$1]=$2; next} $1 in colors{$7="color="colors[$1]}1' contig_color.txt genome1_genome2.tsv > genome1_genom2.tsv_color
+```
 
 
 ## Read-depth data
 
+I map HIFi reads back the genome assembly and normalize the read depth. 
+For heterogamete sex (male here), male should have half coverage in sex chromosomes (X&Y)
+
+First we map reads back to the genome and calcualte the read depth in all positions. 
+
+```python
+python3 cal_wind_avg.py loci_depth.txt 1000000 > loci_win_depth.txt
+```
 
 
 
