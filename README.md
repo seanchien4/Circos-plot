@@ -60,6 +60,14 @@ I create a file that first column is contig name and second column is coresponse
 awk 'NR==FNR{colors[$1]=$2; next} $1 in colors{$7="color="colors[$1]}1' contig_color.txt genome1_genome2.tsv > genome1_genom2.tsv_color
 ```
 
+Adjust radius of links  
+The reason I do this becasue I only want to show read depth in one side (the genome I asssemble, not the left side the genome I download from NCBI)
+
+
+```bash
+
+
+```
 
 ## Read-depth data
 
@@ -67,6 +75,9 @@ I map HIFi reads back the genome assembly and normalize the read depth.
 For heterogamete sex (male here), male should have half coverage in sex chromosomes (X&Y)
 
 First we map reads back to the genome and calcualte the read depth in all positions. 
+
+
+
 
 ```python
 python3 cal_wind_avg.py loci_depth.txt 1000000 > loci_win_depth.txt
