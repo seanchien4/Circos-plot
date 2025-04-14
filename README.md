@@ -1,6 +1,6 @@
 # Circos-plot
 #### Sean Chien
-This tutorial is to create a circos plot with two genomes (reference / de novo) and add some feathers (ex: read depth) to inner rings \
+This tutorial is to create a circos plot with two genomes (reference / de novo) and add some features (ex: read depth) to inner rings \
 Here is the example \
 <img src="https://github.com/user-attachments/assets/4d534f6c-6b25-4a8f-bd0a-668e0f51324f" alt="circos" width="600" height="600">
 ## Karyotype data
